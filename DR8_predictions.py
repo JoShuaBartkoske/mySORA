@@ -78,7 +78,7 @@ for n in MPC_bodies:
     else:
         pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
 
-        if pred["Epoch"] != None:
+        if pred["Epoch"].any() != None:
             occultation_found = True
             pred.add_column([int(n)], name="MPC Number")
         else:
