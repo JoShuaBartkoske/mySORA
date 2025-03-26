@@ -66,7 +66,7 @@ for n in MPC_bodies:
     logging.info(f"MPC Body {asteroid.shortname}")
     print(f"Occultation Found Boolean is: {occultation_found}")
     if occultation_found:
-        new_pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
+        new_pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim=13.5, reference_center=T1)
         if new_pred is not None and len(new_pred) > 0:
             occultation_found = True
             new_pred.add_column([int(n)], name="MPC Number")
@@ -81,7 +81,7 @@ for n in MPC_bodies:
             logging.info(f"No occultation found for {n}")
 
     else:
-        pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
+        pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim=13.5, reference_center=T1)
         print(pred)
         logging.info(pred)
         if pred is not None and len(pred) > 0:
