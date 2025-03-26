@@ -46,7 +46,7 @@ logging.info(f"Time begun: {time_begun}")
 
 # Now to have a list of bodies to search for an occultation:
 ## we will use every named body
-MPC_bodies = np.arange(4,7) # use numbers instead of names. 773917 is the max as of right now
+MPC_bodies = np.arange(1,773917) # use numbers instead of names. 773917 is the max as of right now
 print(MPC_bodies[-1])
 logging.info(f"Final numbered body is: {MPC_bodies[-1]}")
 
