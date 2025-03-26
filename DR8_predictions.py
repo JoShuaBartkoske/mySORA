@@ -46,7 +46,7 @@ logging.info(f"Time begun: {time_begun}")
 
 # Now to have a list of bodies to search for an occultation:
 ## we will use every named body
-MPC_bodies = np.arange(3,8) # use numbers instead of names. 773917 is the max as of right now
+MPC_bodies = np.arange(1,10) # use numbers instead of names. 773917 is the max as of right now
 print(MPC_bodies[-1])
 logging.info(f"Final numbered body is: {MPC_bodies[-1]}")
 
@@ -61,11 +61,10 @@ T4 = Observer(name='Telescope 4', lat='31 40 30.2556', lon='-110 57 9.9756', hei
 occultation_found = False
 
 for n in MPC_bodies:
-    print(f"MPC Number {n}")
     asteroid = Body(name=f'{n}')
     if occultation_found:
-        new_pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim=21, reference_center=T1)
-        new_pred.add_column([int(n)], name="MPC Number")
+        new_pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
+
         for i in range(len(new_pred)):
             pred.add_row([new_pred[i][col] for col in new_pred.colnames])
             new_pred_epoch = Time(new_pred["Epoch"][i])
@@ -74,8 +73,7 @@ for n in MPC_bodies:
             pred["Epoch"][-1] = new_pred_epoch
 
     else:
-        pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim=21, reference_center=T1)
-        pred.add_column([int(n)], name="MPC Number")
+        pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
 
         if pred["Epoch"] != None:
             occultation_found = True
