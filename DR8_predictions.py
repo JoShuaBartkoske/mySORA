@@ -62,6 +62,7 @@ occultation_found = False
 
 for n in MPC_bodies:
     asteroid = Body(name=f'{n}')
+    print(f"Occultation Found Boolean is: {occultation_found}")
     if occultation_found:
         new_pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
 
