@@ -1,27 +1,35 @@
-INFO:root:Time begun: Wed Mar 26 12:39:03 2025
-INFO:root:Final numbered body is: 6
+INFO:root:Time begun: Wed Mar 26 14:06:58 2025
+INFO:root:Final numbered body is: 773916
+INFO:root:MPC Body 1 Ceres
+INFO:root:<No columns>
+INFO:root:No occultation found for 1
+INFO:root:MPC Body 2 Pallas
+INFO:root:<No columns>
+INFO:root:No occultation found for 2
+INFO:root:MPC Body 3 Juno
+INFO:root:<No columns>
+INFO:root:No occultation found for 3
 INFO:root:MPC Body 4 Vesta
 WARNING:astroquery:AstropyDeprecationWarning: The get_moon function is deprecated and may be removed in a future version.
         Use get_body("moon") instead.
-WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-01-22 21:22:59.700' '2025-01-21 04:13:53.920'
- '2025-01-27 00:00:50.220'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
-WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-01-22 21:22:59.700' '2025-01-21 04:13:53.920'
- '2025-01-27 00:00:50.220'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-01-21 04:13:53.920'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-01-21 04:13:53.920'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
 INFO:root:         Epoch             ICRS Star Coord at Epoch      Geocentric Object Position    C/A    P/A    Vel     Dist    G    long  loct M-G-T S-G-T  GaiaDR3 Source ID 
                                                                                       arcsec  deg   km / s    AU    mag   deg  hh:mm  deg   deg                     
 ----------------------- ------------------------------ ------------------------------ ------ ------ ------ ------- ------ ---- ----- ----- ----- -------------------
-2025-01-21 04:13:53.920 14 26 19.13078 -06 29 01.79394 14 28 37.45856 -06 35 41.82787  0.109  10.98  22.38   2.123 10.049   32 06:23    16    85 3641267539768364032
-2025-01-22 21:22:59.700 14 28 37.45794 -06 35 41.87757 14 26 19.13217 -06 29 01.68716  0.051  10.55  21.62   2.101 17.040  134 06:18    13    86 3641207715168310400
-2025-01-27 00:00:50.220 14 34 01.12769 -06 50 15.45097 14 34 01.12753 -06 50 15.46568  0.015 189.41  20.39   2.047 21.005   92 06:07    58    89 6331205862197703680
+2025-01-21 04:13:53.920 14 26 19.13078 -06 29 01.79394 14 26 19.13217 -06 29 01.68716  0.109  10.98  22.38   2.123 10.049   32 06:23    16    85 3641267539768364032
 INFO:root:MPC Body 5 Astraea
 INFO:root:No occultation found for 5
 INFO:root:MPC Body 6 Hebe
-WARNING:astroquery:AstropyDeprecationWarning: The get_moon function is deprecated and may be removed in a future version.
-        Use get_body("moon") instead.
-WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-01-27 03:03:59.180' '2025-02-05 09:58:59.860'
- '2025-02-05 02:49:00.280' '2025-02-02 21:31:57.980'
- '2025-02-04 00:24:58.280'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
-WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-01-27 03:03:59.180' '2025-02-05 09:58:59.860'
- '2025-02-05 02:49:00.280' '2025-02-02 21:31:57.980'
- '2025-02-04 00:24:58.280'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
-INFO:root:Time finished: Wed Mar 26 12:46:07 2025
+INFO:root:No occultation found for 6
+INFO:root:MPC Body 7 Iris
+INFO:root:No occultation found for 7
+INFO:root:MPC Body 8 Flora
+INFO:root:No occultation found for 8
+INFO:root:MPC Body 9 Metis
+INFO:root:No occultation found for 9
+INFO:root:MPC Body 10 Hygiea
+INFO:root:No occultation found for 10
+INFO:root:MPC Body 11 Parthenope
+INFO:root:No occultation found for 11
+INFO:root:MPC Body 12 Victoria
