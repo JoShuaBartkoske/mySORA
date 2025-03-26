@@ -1,0 +1,6 @@
+INFO:root:Time begun: Wed Mar 26 11:26:44 2025
+INFO:root:Final numbered body is: 9
+WARNING:astroquery:AstropyDeprecationWarning: The get_moon function is deprecated and may be removed in a future version.
+        Use get_body("moon") instead.
+WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-02-05 12:43:58.900'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
+WARNING:astroquery:NonRotationTransformationWarning: transforming other coordinates from <ICRS Frame> to <GCRS Frame (obstime=['2025-02-05 12:43:58.900'], obsgeoloc=(0., 0., 0.) m, obsgeovel=(0., 0., 0.) m / s)>. Angular separation can depend on the direction of the transformation.
