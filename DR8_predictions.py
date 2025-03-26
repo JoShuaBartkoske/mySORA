@@ -67,13 +67,18 @@ for n in MPC_bodies:
     print(f"Occultation Found Boolean is: {occultation_found}")
     if occultation_found:
         new_pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
-        new_pred.add_column([int(n)], name="MPC Number")
-        for i in range(len(new_pred)):
-            pred.add_row([new_pred[i][col] for col in new_pred.colnames])
-            new_pred_epoch = Time(new_pred["Epoch"][i])
-            pred['ICRS Star Coord at Epoch'] = SkyCoord(new_pred['ICRS Star Coord at Epoch'][i], unit=(u.hourangle, u.deg))
-            pred['Geocentric Object Position'] = SkyCoord(new_pred['Geocentric Object Position'][i], unit=(u.hourangle, u.deg))
-            pred["Epoch"][-1] = new_pred_epoch
+        if new_pred["Epoch"].any() != None:
+            occultation_found = True
+            new_pred.add_column([int(n)], name="MPC Number")
+            for i in range(len(new_pred)):
+                pred.add_row([new_pred[i][col] for col in new_pred.colnames])
+                new_pred_epoch = Time(new_pred["Epoch"][i])
+                pred['ICRS Star Coord at Epoch'] = SkyCoord(new_pred['ICRS Star Coord at Epoch'][i], unit=(u.hourangle, u.deg))
+                pred['Geocentric Object Position'] = SkyCoord(new_pred['Geocentric Object Position'][i], unit=(u.hourangle, u.deg))
+                pred["Epoch"][-1] = new_pred_epoch
+        else:
+            print(f"No occultation found for {n}")
+            logging.info(f"No occultation found for {n}")
 
     else:
         pred = prediction(body=asteroid, time_beg='2025-01-18',time_end='2025-02-07',mag_lim={'B': 13.5}, reference_center=T1)
